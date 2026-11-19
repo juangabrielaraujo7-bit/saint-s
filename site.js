@@ -87,3 +87,10 @@ for(const trigger of document.querySelectorAll('[data-start],[data-service]'))tr
   document.querySelector('#configurador').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});heading.focus({preventScroll:true});
 };
 render();
+for(const card of document.querySelectorAll('[data-brand]'))card.onclick=event=>{
+  event.preventDefault();
+  if(state.brand!==card.dataset.brand)state.model='';
+  state.brand=card.dataset.brand;
+  go(2);
+  document.querySelector('#configurador').scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+};
