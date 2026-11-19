@@ -205,3 +205,35 @@ h2{line-height:1.2}
 .choice-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.guided-choice{display:flex;align-items:center;gap:22px;text-align:left;min-height:116px;border:1px solid #d5d8d5;border-radius:25px;background:#fafbf9;padding:22px;color:#263440;box-shadow:0 2px 3px #0002;transition:background .15s,border-color .15s}.guided-choice:hover,.guided-choice[aria-pressed=true]{border-color:var(--navy);background:#edf2fb}.guided-choice strong{display:block;font-size:1.12rem}.guided-choice small{display:block;font-size:1rem;margin-top:3px}.choice-icon{font-size:1.8rem;color:var(--navy)}.guided-footer{display:flex;gap:12px;justify-content:space-between;margin-top:24px}.guided label{display:grid;gap:8px;font-weight:600;margin-top:16px}.guided input,.guided textarea,.guided select{width:100%;padding:14px;border:1px solid #c4cbd0;border-radius:10px;background:#fff;color:var(--ink);font:inherit}.model-list{max-height:310px;overflow:auto;margin-top:18px}.model-list .guided-choice{min-height:60px;padding:16px}.guided-manual{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}.problem-heading{margin:24px 0 14px;font-weight:700}.guided-summary{white-space:pre-wrap;overflow-wrap:anywhere;background:#f2f5f9;border-radius:12px;padding:20px}.guided-error{color:#a52136;margin-top:12px}.guided-card h2:focus{outline:0}
 .summary-row{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding-block:16px;border-bottom:1px solid #c4cbcd}.summary-row small{color:var(--navy);font-weight:700;letter-spacing:.06em}.summary-row p{margin-top:6px;color:#697583}.model-list .guided-choice{min-height:56px;border-radius:14px;padding:14px 16px}.guided-manual .guided-choice{min-height:48px;padding:12px 16px;border-radius:14px}.services-band .service-card h3{font-weight:650}
 @media(max-width:680px){.choice-grid{grid-template-columns:1fr}.guided-choice{min-height:88px;border-radius:18px;padding:18px}.guided-card{border-radius:22px}.guided-footer{flex-wrap:wrap}.service-card p{font-size:1rem}.services-band .eyebrow{margin-bottom:25px}}
+
+/* Passos da seção Como funciona, a partir do Império das Telas. */
+.how-band{background:#f7f8fa;color:#131416}
+.how-heading{margin-bottom:50px}
+.how-heading .eyebrow{font:700 .85rem "DM Sans Variable",sans-serif;letter-spacing:.06em;color:#747680;margin-bottom:18px}
+.how-heading h2{font-size:clamp(1.85rem,3vw,2.65rem);font-weight:700;letter-spacing:-.04em;line-height:1.16;max-width:760px}
+.steps{display:grid;grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr;align-items:start}
+.step-connector{display:flex;align-items:center;justify-content:center;height:48px;color:#81838c}
+.step-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:#141416;color:#fff;margin-bottom:18px}
+.step-n{display:block;font-size:.85rem;font-weight:700;color:#747680;margin-bottom:14px;letter-spacing:.04em}
+.step-body h3{font-family:"DM Sans Variable",sans-serif;font-size:1.05rem;font-weight:700;letter-spacing:-.02em;line-height:1.3;margin-bottom:8px}
+.step-body p{font-size:.95rem;line-height:1.55;color:#60636d}
+/* Avaliações da Capucho, com uma fileira de três depoimentos. */
+.review-band{background:#eff0f2}
+.reviews-label{display:inline-block;padding:10px 16px;border-radius:4px;background:linear-gradient(110deg,#2045ed,#4a7bff);color:#fff;font:800 .95rem/1.4 "DM Sans Variable",sans-serif;letter-spacing:.09em;margin-bottom:42px;max-width:100%}
+.review-layout{grid-template-columns:minmax(200px,.85fr) minmax(0,3fr);gap:42px;align-items:center}
+.google-proof{display:flex;flex-direction:column;align-items:center;text-align:center;width:fit-content}
+.google-badge{display:block;width:190px;max-width:100%}
+.google-badge img{width:100%;height:auto}
+.reviews-caption{font-size:.95rem;color:#102c60;margin-top:16px}
+.google-all{display:inline-flex;align-items:center;gap:14px;color:#2448ff;font-weight:700;text-decoration:none;font-size:.95rem;margin-top:16px}
+.review-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.review-grid .review{background:#fff;display:flex;flex-direction:column;padding:22px;border:1px solid #dfe1e5;border-radius:16px;gap:0}
+.review-grid .stars{color:#b8740b;font-size:1.2rem;letter-spacing:.06em}
+.review-grid blockquote{margin:18px 0 24px;font-size:.95rem;line-height:1.65;color:#102c60}
+.review-grid figcaption{margin-top:auto;padding:0;display:flex;align-items:center;flex-wrap:nowrap;gap:12px}
+.review-grid .initials{height:40px;width:40px;min-width:40px;display:grid;place-items:center;background:#eef2ff;border-radius:50%;font-size:.75rem;font-weight:700;color:#2448ff}
+.review-grid figcaption strong{font-size:.85rem;display:block;line-height:1.45}
+.review-grid figcaption small{font-size:.8rem;color:#58667a}
+@media(max-width:1000px){.review-layout{grid-template-columns:1fr}.google-proof{align-items:flex-start;text-align:left}.google-badge{width:170px}}
+@media(max-width:860px){.steps{grid-template-columns:1fr;gap:0}.step-connector{justify-content:flex-start;height:auto;padding:10px 0 10px 12px}.step-connector svg{rotate:90deg}.step{display:grid;grid-template-columns:48px 1fr;column-gap:18px}.step-icon{grid-row:1/3;margin:0}.step-n{margin-bottom:6px}.step-body{grid-column:2}.how-heading{margin-bottom:32px}}
+@media(max-width:720px){.review-grid{grid-template-columns:1fr}.reviews-label{font-size:.85rem;margin-bottom:28px}.review-layout{gap:28px}}
