@@ -9,11 +9,9 @@
   <meta property="og:description" content="Assistência técnica de celulares na Vila Haro, Sorocaba.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#12305B">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script defer src="site.js"></script>
+  <link rel="stylesheet" href="components.css">
+  <script defer src="guide-data.js"></script><script defer src="site.js"></script>
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"LocalBusiness","name":"Saint’s Assistência Técnica","description":"Assistência técnica de celulares na Vila Haro, Sorocaba.","telephone":"+5515988120518","hasMap":"https://maps.app.goo.gl/NFekLecstatwaCcu9","sameAs":["https://www.instagram.com/saints_import1/"],"address":{"@type":"PostalAddress","streetAddress":"Rua Guilherme Marcone, 384, Vila Haro","addressLocality":"Sorocaba","addressRegion":"SP","postalCode":"18015-066","addressCountry":"BR"}}
   </script>
@@ -42,15 +40,8 @@
         <img class="hero-art" src="hero.jpg" alt="Três celulares azul, prata e vinho sobrepostos" width="1350" height="900" fetchpriority="high">
       </div>
     </section>
-    <section class="wrap services section" id="servicos">
-      <h2>Serviços para seu celular</h2>
-      <div class="service-grid">
-        <article class="service"><div class="float"><img src="tela.png" alt="" width="380" height="280"></div><div class="service-copy"><h3>Troca de tela</h3><p>Tela trincada, manchas na imagem ou falhas no toque.</p><a href="https://wa.me/5515988120518?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20sobre%20troca%20de%20tela." data-start="Tela">Consultar reparo</a></div></article>
-        <article class="service"><div class="float"><img src="bateria.png" alt="" width="380" height="280"></div><div class="service-copy"><h3>Troca de bateria</h3><p>Bateria descarregando rápido ou celular desligando sozinho.</p><a href="https://wa.me/5515988120518?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20sobre%20troca%20de%20bateria." data-start="Bateria">Consultar reparo</a></div></article>
-        <article class="service"><div class="float"><img src="carga.png" alt="" width="380" height="280"></div><div class="service-copy"><h3>Conector de carga</h3><p>Mau contato ao conectar o cabo ou celular que não carrega.</p><a href="https://wa.me/5515988120518?text=Ol%C3%A1%21%20Meu%20celular%20est%C3%A1%20com%20problema%20para%20carregar." data-start="Carregamento">Consultar reparo</a></div></article>
-        <article class="service"><div class="float"><img src="outros.png" alt="" width="380" height="280"></div><div class="service-copy"><h3>Outros reparos</h3><p>Conte o que aconteceu para a gente avaliar o seu caso.</p><a href="https://wa.me/5515988120518" data-start="Outro problema">Consultar reparo</a></div></article>
-      </div>
-    </section>
+<section class="guided section" id="configurador"><div class="wrap"><p class="eyebrow">ATENDIMENTO GUIADO</p><div class="guided-progress" role="progressbar" aria-label="Etapas do atendimento" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1"><span></span></div><div class="guided-card"><h2 id="guided-title" tabindex="-1"></h2><p id="guided-description"></p><div id="guided-content"></div><div class="guided-footer"><button type="button" class="button secondary" id="guided-back">Voltar</button><button type="button" class="button amber" id="guided-next">Continuar</button></div></div></div></section>
+    <section class="services-band section" id="servicos"><div class="wrap"><h2 class="eyebrow">SERVIÇOS</h2><div class="services-carousel" role="region" aria-roledescription="carrossel" aria-label="Serviços da Saint’s"><ul class="services-track" tabindex="0"><li class="services-slide" style="--i:0"><a class="service-card tone-0" href="#configurador" data-service="Tela"><div class="service-image"><img src="tela.png" alt="" loading="lazy" width="512" height="512"></div><div class="service-card-content"><h3>Troca de tela</h3><p>Tela trincada, manchas na imagem ou falhas no toque.</p><span class="text-link">Conhecer o serviço <span aria-hidden="true">↗</span></span></div></a></li><li class="services-slide" style="--i:1"><a class="service-card tone-1" href="#configurador" data-service="Bateria"><div class="service-image"><img src="bateria.png" alt="" loading="lazy" width="512" height="512"></div><div class="service-card-content"><h3>Troca de bateria</h3><p>Bateria descarregando rápido ou celular desligando sozinho.</p><span class="text-link">Conhecer o serviço <span aria-hidden="true">↗</span></span></div></a></li><li class="services-slide" style="--i:2"><a class="service-card tone-2" href="#configurador" data-service="Carregamento"><div class="service-image"><img src="carga.png" alt="" loading="lazy" width="512" height="512"></div><div class="service-card-content"><h3>Conector de carga</h3><p>Mau contato ao conectar o cabo ou celular que não carrega.</p><span class="text-link">Conhecer o serviço <span aria-hidden="true">↗</span></span></div></a></li><li class="services-slide" style="--i:3"><a class="service-card tone-0" href="#configurador" data-service="Outros problemas"><div class="service-image"><img src="outros.png" alt="" loading="lazy" width="512" height="512"></div><div class="service-card-content"><h3>Outros reparos</h3><p>Conte o que aconteceu para a equipe avaliar o seu caso.</p><span class="text-link">Conhecer o serviço <span aria-hidden="true">↗</span></span></div></a></li></ul><button class="carousel-button carousel-prev" aria-label="Serviços anteriores">←</button><button class="carousel-button carousel-next" aria-label="Próximos serviços">→</button></div></div></section>
     <section class="wrap section process" id="como-funciona">
       <div class="process-art"><img src="bancada.jpg" alt="Imagem ilustrativa de uma bancada com celulares em reparo" width="900" height="600" loading="lazy"></div>
       <div><h2>Como funciona</h2>
@@ -81,26 +72,6 @@
     </section>
   </main>
   <footer><div class="wrap"><a class="wordmark" href="#"><strong>SAINT’S</strong><span>ASSISTÊNCIA<br>TÉCNICA</span></a><p>Vila Haro · Sorocaba</p><a href="https://wa.me/5515988120518">(15) 98812-0518</a></div></footer>
-  <dialog id="atendimento" aria-labelledby="atendimento-titulo">
-    <form id="wizard">
-      <button type="button" class="close" aria-label="Fechar atendimento">×</button>
-      <p class="eyebrow">ATENDIMENTO GUIADO</p>
-      <h2 id="atendimento-titulo" tabindex="-1">Qual é o seu celular?</h2>
-      <p id="wizard-progress" aria-live="polite">Etapa 1 de 3</p>
-      <fieldset data-step="0">
-        <legend class="sr-only">Aparelho</legend>
-        <label>Marca<select name="marca" required><option value="">Selecione a marca</option><option>Apple</option><option>Samsung</option><option>Motorola</option><option>Xiaomi</option><option>Outra marca</option><option>Não sei a marca</option></select></label>
-        <label>Modelo (opcional)<input name="modelo" placeholder="Ex.: iPhone 13 ou Galaxy A54" maxlength="80"></label>
-      </fieldset>
-      <fieldset data-step="1" hidden disabled>
-        <legend class="sr-only">Problema</legend>
-        <label>Categoria<select name="problema" required><option value="">Selecione o problema</option><option>Tela</option><option>Bateria</option><option>Carregamento</option><option>Áudio ou câmera</option><option>Contato com líquido</option><option>Outro problema</option></select></label>
-        <label id="symptom-label" hidden>Sintoma<select name="sintoma"></select></label>
-        <label>O que mais precisamos saber? (opcional)<textarea name="observacao" rows="3" maxlength="500"></textarea></label>
-      </fieldset>
-      <fieldset data-step="2" hidden disabled><legend class="sr-only">Resumo</legend><p>Confira sua mensagem antes de abrir o WhatsApp.</p><p id="wizard-summary"></p></fieldset>
-      <div class="wizard-actions"><button type="button" class="button secondary" id="wizard-back" hidden>Voltar</button><button type="submit" class="button amber" id="wizard-next">Continuar</button><a class="button amber" href="https://wa.me/5515988120518" id="wizard-send" hidden>Abrir WhatsApp</a></div>
-    </form>
-  </dialog>
+
 </body>
 </html>
